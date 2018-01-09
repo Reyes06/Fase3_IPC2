@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Servicios/" targetNamespace="http://Servicios/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="agregarConocimiento" type="tns:agregarConocimiento" />
+  <xs:element name="agregarConocimientoResponse" type="tns:agregarConocimientoResponse" />
+  <xs:element name="agregarContacto" type="tns:agregarContacto" />
+  <xs:element name="agregarContactoResponse" type="tns:agregarContactoResponse" />
+  <xs:element name="agregarKarmaExtra" type="tns:agregarKarmaExtra" />
+  <xs:element name="agregarKarmaExtraResponse" type="tns:agregarKarmaExtraResponse" />
+  <xs:element name="agregarUsuario" type="tns:agregarUsuario" />
+  <xs:element name="agregarUsuarioResponse" type="tns:agregarUsuarioResponse" />
+  <xs:element name="eliminarContacto" type="tns:eliminarContacto" />
+  <xs:element name="eliminarContactoResponse" type="tns:eliminarContactoResponse" />
+  <xs:element name="enviarMensaje" type="tns:enviarMensaje" />
+  <xs:element name="enviarMensajeResponse" type="tns:enviarMensajeResponse" />
+  <xs:element name="mensajesEnviados" type="tns:mensajesEnviados" />
+  <xs:element name="mensajesEnviadosResponse" type="tns:mensajesEnviadosResponse" />
+  <xs:element name="mensajesRecibidos" type="tns:mensajesRecibidos" />
+  <xs:element name="mensajesRecibidosResponse" type="tns:mensajesRecibidosResponse" />
+  <xs:element name="obtenerContactos" type="tns:obtenerContactos" />
+  <xs:element name="obtenerContactosResponse" type="tns:obtenerContactosResponse" />
+  <xs:element name="obtenerDatosUsuario" type="tns:obtenerDatosUsuario" />
+  <xs:element name="obtenerDatosUsuarioResponse" type="tns:obtenerDatosUsuarioResponse" />
+  <xs:element name="obtenerUsuario" type="tns:obtenerUsuario" />
+  <xs:element name="obtenerUsuarioResponse" type="tns:obtenerUsuarioResponse" />
+  <xs:element name="validarUsuario" type="tns:validarUsuario" />
+  <xs:element name="validarUsuarioResponse" type="tns:validarUsuarioResponse" />
+  <xs:complexType name="mensajesEnviados">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mensajesEnviadosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element name="dia" type="xs:int" />
+      <xs:element name="mes" type="xs:int" />
+      <xs:element name="ano" type="xs:int" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="nickname" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarUsuarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarConocimiento">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+      <xs:element minOccurs="0" name="conocimiento" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarConocimientoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerUsuario">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarContacto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nicknameOtro" type="xs:string" />
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarContactoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerContactos">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerContactosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviarMensaje">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+      <xs:element minOccurs="0" name="nicknameUsuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contenido" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviarMensajeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarKarmaExtra">
+    <xs:sequence>
+      <xs:element name="id_usuarioRecibidor" type="xs:int" />
+      <xs:element name="id_usuarioDador" type="xs:int" />
+      <xs:element minOccurs="0" name="conocimiento" type="xs:string" />
+      <xs:element name="karmaExtra" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarKarmaExtraResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="validarUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nickname" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="validarUsuarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mensajesRecibidos">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mensajesRecibidosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerDatosUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nickname" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerDatosUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarContacto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nicknameOtro" type="xs:string" />
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarContactoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://Servicios/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="Denuncia" targetNamespace="http://Servicios/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WarlockSoft/Denuncia?xsd=1" namespace="http://Servicios/" />
+    </xsd:schema>
+  </types>
+  <message name="obtenerTarDenunciadas">
+    <part name="parameters" element="tns:obtenerTarDenunciadas" />
+  </message>
+  <message name="obtenerTarDenunciadasResponse">
+    <part name="parameters" element="tns:obtenerTarDenunciadasResponse" />
+  </message>
+  <message name="obtenerProDenunciadas">
+    <part name="parameters" element="tns:obtenerProDenunciadas" />
+  </message>
+  <message name="obtenerProDenunciadasResponse">
+    <part name="parameters" element="tns:obtenerProDenunciadasResponse" />
+  </message>
+  <message name="obtenerPubDenunciadas">
+    <part name="parameters" element="tns:obtenerPubDenunciadas" />
+  </message>
+  <message name="obtenerPubDenunciadasResponse">
+    <part name="parameters" element="tns:obtenerPubDenunciadasResponse" />
+  </message>
+  <message name="obtenerComDenunciadas">
+    <part name="parameters" element="tns:obtenerComDenunciadas" />
+  </message>
+  <message name="obtenerComDenunciadasResponse">
+    <part name="parameters" element="tns:obtenerComDenunciadasResponse" />
+  </message>
+  <portType name="Denuncia">
+    <operation name="obtenerTarDenunciadas">
+      <input wsam:Action="http://Servicios/Denuncia/obtenerTarDenunciadasRequest" message="tns:obtenerTarDenunciadas" />
+      <output wsam:Action="http://Servicios/Denuncia/obtenerTarDenunciadasResponse" message="tns:obtenerTarDenunciadasResponse" />
+    </operation>
+    <operation name="obtenerProDenunciadas">
+      <input wsam:Action="http://Servicios/Denuncia/obtenerProDenunciadasRequest" message="tns:obtenerProDenunciadas" />
+      <output wsam:Action="http://Servicios/Denuncia/obtenerProDenunciadasResponse" message="tns:obtenerProDenunciadasResponse" />
+    </operation>
+    <operation name="obtenerPubDenunciadas">
+      <input wsam:Action="http://Servicios/Denuncia/obtenerPubDenunciadasRequest" message="tns:obtenerPubDenunciadas" />
+      <output wsam:Action="http://Servicios/Denuncia/obtenerPubDenunciadasResponse" message="tns:obtenerPubDenunciadasResponse" />
+    </operation>
+    <operation name="obtenerComDenunciadas">
+      <input wsam:Action="http://Servicios/Denuncia/obtenerComDenunciadasRequest" message="tns:obtenerComDenunciadas" />
+      <output wsam:Action="http://Servicios/Denuncia/obtenerComDenunciadasResponse" message="tns:obtenerComDenunciadasResponse" />
+    </operation>
+  </portType>
+  <binding name="DenunciaPortBinding" type="tns:Denuncia">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="obtenerTarDenunciadas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerProDenunciadas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPubDenunciadas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerComDenunciadas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Denuncia">
+    <port name="DenunciaPort" binding="tns:DenunciaPortBinding">
+      <soap:address location="http://localhost:8080/WarlockSoft/Denuncia" />
+    </port>
+  </service>
+</definitions>

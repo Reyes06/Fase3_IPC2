@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://Servicios/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="Asociacion" targetNamespace="http://Servicios/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WarlockSoft/Asociacion?xsd=1" namespace="http://Servicios/" />
+    </xsd:schema>
+  </types>
+  <message name="nuevoMiembro">
+    <part name="parameters" element="tns:nuevoMiembro" />
+  </message>
+  <message name="nuevoMiembroResponse">
+    <part name="parameters" element="tns:nuevoMiembroResponse" />
+  </message>
+  <message name="crearAsociacion">
+    <part name="parameters" element="tns:crearAsociacion" />
+  </message>
+  <message name="crearAsociacionResponse">
+    <part name="parameters" element="tns:crearAsociacionResponse" />
+  </message>
+  <message name="eliminarMiembro">
+    <part name="parameters" element="tns:eliminarMiembro" />
+  </message>
+  <message name="eliminarMiembroResponse">
+    <part name="parameters" element="tns:eliminarMiembroResponse" />
+  </message>
+  <message name="obtenerAsociacionesPorUsuario">
+    <part name="parameters" element="tns:obtenerAsociacionesPorUsuario" />
+  </message>
+  <message name="obtenerAsociacionesPorUsuarioResponse">
+    <part name="parameters" element="tns:obtenerAsociacionesPorUsuarioResponse" />
+  </message>
+  <message name="cambiarTipoMembresia">
+    <part name="parameters" element="tns:cambiarTipoMembresia" />
+  </message>
+  <message name="cambiarTipoMembresiaResponse">
+    <part name="parameters" element="tns:cambiarTipoMembresiaResponse" />
+  </message>
+  <message name="obtenerPublicacionesAsociacion">
+    <part name="parameters" element="tns:obtenerPublicacionesAsociacion" />
+  </message>
+  <message name="obtenerPublicacionesAsociacionResponse">
+    <part name="parameters" element="tns:obtenerPublicacionesAsociacionResponse" />
+  </message>
+  <message name="obtenerUsuariosPorAsociacion">
+    <part name="parameters" element="tns:obtenerUsuariosPorAsociacion" />
+  </message>
+  <message name="obtenerUsuariosPorAsociacionResponse">
+    <part name="parameters" element="tns:obtenerUsuariosPorAsociacionResponse" />
+  </message>
+  <portType name="Asociacion">
+    <operation name="nuevoMiembro">
+      <input wsam:Action="http://Servicios/Asociacion/nuevoMiembroRequest" message="tns:nuevoMiembro" />
+      <output wsam:Action="http://Servicios/Asociacion/nuevoMiembroResponse" message="tns:nuevoMiembroResponse" />
+    </operation>
+    <operation name="crearAsociacion">
+      <input wsam:Action="http://Servicios/Asociacion/crearAsociacionRequest" message="tns:crearAsociacion" />
+      <output wsam:Action="http://Servicios/Asociacion/crearAsociacionResponse" message="tns:crearAsociacionResponse" />
+    </operation>
+    <operation name="eliminarMiembro">
+      <input wsam:Action="http://Servicios/Asociacion/eliminarMiembroRequest" message="tns:eliminarMiembro" />
+      <output wsam:Action="http://Servicios/Asociacion/eliminarMiembroResponse" message="tns:eliminarMiembroResponse" />
+    </operation>
+    <operation name="obtenerAsociacionesPorUsuario">
+      <input wsam:Action="http://Servicios/Asociacion/obtenerAsociacionesPorUsuarioRequest" message="tns:obtenerAsociacionesPorUsuario" />
+      <output wsam:Action="http://Servicios/Asociacion/obtenerAsociacionesPorUsuarioResponse" message="tns:obtenerAsociacionesPorUsuarioResponse" />
+    </operation>
+    <operation name="cambiarTipoMembresia">
+      <input wsam:Action="http://Servicios/Asociacion/cambiarTipoMembresiaRequest" message="tns:cambiarTipoMembresia" />
+      <output wsam:Action="http://Servicios/Asociacion/cambiarTipoMembresiaResponse" message="tns:cambiarTipoMembresiaResponse" />
+    </operation>
+    <operation name="obtenerPublicacionesAsociacion">
+      <input wsam:Action="http://Servicios/Asociacion/obtenerPublicacionesAsociacionRequest" message="tns:obtenerPublicacionesAsociacion" />
+      <output wsam:Action="http://Servicios/Asociacion/obtenerPublicacionesAsociacionResponse" message="tns:obtenerPublicacionesAsociacionResponse" />
+    </operation>
+    <operation name="obtenerUsuariosPorAsociacion">
+      <input wsam:Action="http://Servicios/Asociacion/obtenerUsuariosPorAsociacionRequest" message="tns:obtenerUsuariosPorAsociacion" />
+      <output wsam:Action="http://Servicios/Asociacion/obtenerUsuariosPorAsociacionResponse" message="tns:obtenerUsuariosPorAsociacionResponse" />
+    </operation>
+  </portType>
+  <binding name="AsociacionPortBinding" type="tns:Asociacion">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="nuevoMiembro">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="crearAsociacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarMiembro">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerAsociacionesPorUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="cambiarTipoMembresia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPublicacionesAsociacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerUsuariosPorAsociacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Asociacion">
+    <port name="AsociacionPort" binding="tns:AsociacionPortBinding">
+      <soap:address location="http://localhost:8080/WarlockSoft/Asociacion" />
+    </port>
+  </service>
+</definitions>

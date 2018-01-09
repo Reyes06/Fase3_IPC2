@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://Servicios/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="Publicacion" targetNamespace="http://Servicios/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WarlockSoft/Publicacion?xsd=1" namespace="http://Servicios/" />
+    </xsd:schema>
+  </types>
+  <message name="comentarPub">
+    <part name="parameters" element="tns:comentarPub" />
+  </message>
+  <message name="comentarPubResponse">
+    <part name="parameters" element="tns:comentarPubResponse" />
+  </message>
+  <message name="agregarPublicacion">
+    <part name="parameters" element="tns:agregarPublicacion" />
+  </message>
+  <message name="agregarPublicacionResponse">
+    <part name="parameters" element="tns:agregarPublicacionResponse" />
+  </message>
+  <message name="obtenerComentarios">
+    <part name="parameters" element="tns:obtenerComentarios" />
+  </message>
+  <message name="obtenerComentariosResponse">
+    <part name="parameters" element="tns:obtenerComentariosResponse" />
+  </message>
+  <message name="obtenerPublicacionesContactos">
+    <part name="parameters" element="tns:obtenerPublicacionesContactos" />
+  </message>
+  <message name="obtenerPublicacionesContactosResponse">
+    <part name="parameters" element="tns:obtenerPublicacionesContactosResponse" />
+  </message>
+  <message name="obtenerPublicacionesIndividuales">
+    <part name="parameters" element="tns:obtenerPublicacionesIndividuales" />
+  </message>
+  <message name="obtenerPublicacionesIndividualesResponse">
+    <part name="parameters" element="tns:obtenerPublicacionesIndividualesResponse" />
+  </message>
+  <message name="comentarPublicacion">
+    <part name="parameters" element="tns:comentarPublicacion" />
+  </message>
+  <message name="comentarPublicacionResponse">
+    <part name="parameters" element="tns:comentarPublicacionResponse" />
+  </message>
+  <portType name="Publicacion">
+    <operation name="comentarPub">
+      <input wsam:Action="http://Servicios/Publicacion/comentarPubRequest" message="tns:comentarPub" />
+      <output wsam:Action="http://Servicios/Publicacion/comentarPubResponse" message="tns:comentarPubResponse" />
+    </operation>
+    <operation name="agregarPublicacion">
+      <input wsam:Action="http://Servicios/Publicacion/agregarPublicacionRequest" message="tns:agregarPublicacion" />
+      <output wsam:Action="http://Servicios/Publicacion/agregarPublicacionResponse" message="tns:agregarPublicacionResponse" />
+    </operation>
+    <operation name="obtenerComentarios">
+      <input wsam:Action="http://Servicios/Publicacion/obtenerComentariosRequest" message="tns:obtenerComentarios" />
+      <output wsam:Action="http://Servicios/Publicacion/obtenerComentariosResponse" message="tns:obtenerComentariosResponse" />
+    </operation>
+    <operation name="obtenerPublicacionesContactos">
+      <input wsam:Action="http://Servicios/Publicacion/obtenerPublicacionesContactosRequest" message="tns:obtenerPublicacionesContactos" />
+      <output wsam:Action="http://Servicios/Publicacion/obtenerPublicacionesContactosResponse" message="tns:obtenerPublicacionesContactosResponse" />
+    </operation>
+    <operation name="obtenerPublicacionesIndividuales">
+      <input wsam:Action="http://Servicios/Publicacion/obtenerPublicacionesIndividualesRequest" message="tns:obtenerPublicacionesIndividuales" />
+      <output wsam:Action="http://Servicios/Publicacion/obtenerPublicacionesIndividualesResponse" message="tns:obtenerPublicacionesIndividualesResponse" />
+    </operation>
+    <operation name="comentarPublicacion">
+      <input wsam:Action="http://Servicios/Publicacion/comentarPublicacionRequest" message="tns:comentarPublicacion" />
+      <output wsam:Action="http://Servicios/Publicacion/comentarPublicacionResponse" message="tns:comentarPublicacionResponse" />
+    </operation>
+  </portType>
+  <binding name="PublicacionPortBinding" type="tns:Publicacion">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="comentarPub">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="agregarPublicacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerComentarios">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPublicacionesContactos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPublicacionesIndividuales">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="comentarPublicacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Publicacion">
+    <port name="PublicacionPort" binding="tns:PublicacionPortBinding">
+      <soap:address location="http://localhost:8080/WarlockSoft/Publicacion" />
+    </port>
+  </service>
+</definitions>

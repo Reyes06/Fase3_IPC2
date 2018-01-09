@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WarlockSoft.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WarlockSoft_JConocimiento_Conocimiento" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/WarlockSoft/Conocimiento</Value>
+    </Setting>
+    <Setting Name="WarlockSoft_JProyecto_Proyecto" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/WarlockSoft/Proyecto</Value>
+    </Setting>
+    <Setting Name="WarlockSoft_JTarea_Tarea" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/WarlockSoft/Tarea</Value>
+    </Setting>
+    <Setting Name="WarlockSoft_JUsuario_Usuario" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/WarlockSoft/Usuario</Value>
+    </Setting>
+    <Setting Name="WarlockSoft_JAsociacion_Asociacion" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/WarlockSoft/Asociacion</Value>
+    </Setting>
+    <Setting Name="WarlockSoft_JPublicacion_Publicacion" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/WarlockSoft/Publicacion</Value>
+    </Setting>
+    <Setting Name="WarlockSoft_JCargaMasiva1_UsuariosYAsociaciones" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/WarlockSoft/UsuariosYAsociaciones</Value>
+    </Setting>
+    <Setting Name="WarlockSoft_JCargaMasiva2_EstadosYComentarios" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/WarlockSoft/EstadosYComentarios</Value>
+    </Setting>
+    <Setting Name="WarlockSoft_JCargaMasiva3_Tareas" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/WarlockSoft/Tareas</Value>
+    </Setting>
+    <Setting Name="WarlockSoft_JCargaMasiva4_Proyectos" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/WarlockSoft/Proyectos</Value>
+    </Setting>
+    <Setting Name="WarlockSoft_JDenuncia_Denuncia" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/WarlockSoft/Denuncia</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

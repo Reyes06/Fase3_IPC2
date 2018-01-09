@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://Servicios/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="EstadosYComentarios" targetNamespace="http://Servicios/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WarlockSoft/EstadosYComentarios?xsd=1" namespace="http://Servicios/" />
+    </xsd:schema>
+  </types>
+  <message name="S1">
+    <part name="parameters" element="tns:S1" />
+  </message>
+  <message name="S1Response">
+    <part name="parameters" element="tns:S1Response" />
+  </message>
+  <message name="S2">
+    <part name="parameters" element="tns:S2" />
+  </message>
+  <message name="S2Response">
+    <part name="parameters" element="tns:S2Response" />
+  </message>
+  <message name="S3">
+    <part name="parameters" element="tns:S3" />
+  </message>
+  <message name="S3Response">
+    <part name="parameters" element="tns:S3Response" />
+  </message>
+  <message name="S4">
+    <part name="parameters" element="tns:S4" />
+  </message>
+  <message name="S4Response">
+    <part name="parameters" element="tns:S4Response" />
+  </message>
+  <message name="S5">
+    <part name="parameters" element="tns:S5" />
+  </message>
+  <message name="S5Response">
+    <part name="parameters" element="tns:S5Response" />
+  </message>
+  <message name="S6">
+    <part name="parameters" element="tns:S6" />
+  </message>
+  <message name="S6Response">
+    <part name="parameters" element="tns:S6Response" />
+  </message>
+  <message name="S7">
+    <part name="parameters" element="tns:S7" />
+  </message>
+  <message name="S7Response">
+    <part name="parameters" element="tns:S7Response" />
+  </message>
+  <message name="esUnNumero">
+    <part name="parameters" element="tns:esUnNumero" />
+  </message>
+  <message name="esUnNumeroResponse">
+    <part name="parameters" element="tns:esUnNumeroResponse" />
+  </message>
+  <message name="leerEstadosYComentarios">
+    <part name="parameters" element="tns:leerEstadosYComentarios" />
+  </message>
+  <message name="leerEstadosYComentariosResponse">
+    <part name="parameters" element="tns:leerEstadosYComentariosResponse" />
+  </message>
+  <message name="S9">
+    <part name="parameters" element="tns:S9" />
+  </message>
+  <message name="S9Response">
+    <part name="parameters" element="tns:S9Response" />
+  </message>
+  <message name="S10">
+    <part name="parameters" element="tns:S10" />
+  </message>
+  <message name="S10Response">
+    <part name="parameters" element="tns:S10Response" />
+  </message>
+  <message name="S8">
+    <part name="parameters" element="tns:S8" />
+  </message>
+  <message name="S8Response">
+    <part name="parameters" element="tns:S8Response" />
+  </message>
+  <message name="S11">
+    <part name="parameters" element="tns:S11" />
+  </message>
+  <message name="S11Response">
+    <part name="parameters" element="tns:S11Response" />
+  </message>
+  <message name="S12">
+    <part name="parameters" element="tns:S12" />
+  </message>
+  <message name="S12Response">
+    <part name="parameters" element="tns:S12Response" />
+  </message>
+  <portType name="EstadosYComentarios">
+    <operation name="S1">
+      <input wsam:Action="http://Servicios/EstadosYComentarios/S1Request" message="tns:S1" />
+      <output wsam:Action="http://Servicios/EstadosYComentarios/S1Response" message="tns:S1Response" />
+    </operation>
+    <operation name="S2">
+      <input wsam:Action="http://Servicios/EstadosYComentarios/S2Request" message="tns:S2" />
+      <output wsam:Action="http://Servicios/EstadosYComentarios/S2Response" message="tns:S2Response" />
+    </operation>
+    <operation name="S3">
+      <input wsam:Action="http://Servicios/EstadosYComentarios/S3Request" message="tns:S3" />
+      <output wsam:Action="http://Servicios/EstadosYComentarios/S3Response" message="tns:S3Response" />
+    </operation>
+    <operation name="S4">
+      <input wsam:Action="http://Servicios/EstadosYComentarios/S4Request" message="tns:S4" />
+      <output wsam:Action="http://Servicios/EstadosYComentarios/S4Response" message="tns:S4Response" />
+    </operation>
+    <operation name="S5">
+      <input wsam:Action="http://Servicios/EstadosYComentarios/S5Request" message="tns:S5" />
+      <output wsam:Action="http://Servicios/EstadosYComentarios/S5Response" message="tns:S5Response" />
+    </operation>
+    <operation name="S6">
+      <input wsam:Action="http://Servicios/EstadosYComentarios/S6Request" message="tns:S6" />
+      <output wsam:Action="http://Servicios/EstadosYComentarios/S6Response" message="tns:S6Response" />
+    </operation>
+    <operation name="S7">
+      <input wsam:Action="http://Servicios/EstadosYComentarios/S7Request" message="tns:S7" />
+      <output wsam:Action="http://Servicios/EstadosYComentarios/S7Response" message="tns:S7Response" />
+    </operation>
+    <operation name="esUnNumero">
+      <input wsam:Action="http://Servicios/EstadosYComentarios/esUnNumeroRequest" message="tns:esUnNumero" />
+      <output wsam:Action="http://Servicios/EstadosYComentarios/esUnNumeroResponse" message="tns:esUnNumeroResponse" />
+    </operation>
+    <operation name="leerEstadosYComentarios">
+      <input wsam:Action="http://Servicios/EstadosYComentarios/leerEstadosYComentariosRequest" message="tns:leerEstadosYComentarios" />
+      <output wsam:Action="http://Servicios/EstadosYComentarios/leerEstadosYComentariosResponse" message="tns:leerEstadosYComentariosResponse" />
+    </operation>
+    <operation name="S9">
+      <input wsam:Action="http://Servicios/EstadosYComentarios/S9Request" message="tns:S9" />
+      <output wsam:Action="http://Servicios/EstadosYComentarios/S9Response" message="tns:S9Response" />
+    </operation>
+    <operation name="S10">
+      <input wsam:Action="http://Servicios/EstadosYComentarios/S10Request" message="tns:S10" />
+      <output wsam:Action="http://Servicios/EstadosYComentarios/S10Response" message="tns:S10Response" />
+    </operation>
+    <operation name="S8">
+      <input wsam:Action="http://Servicios/EstadosYComentarios/S8Request" message="tns:S8" />
+      <output wsam:Action="http://Servicios/EstadosYComentarios/S8Response" message="tns:S8Response" />
+    </operation>
+    <operation name="S11">
+      <input wsam:Action="http://Servicios/EstadosYComentarios/S11Request" message="tns:S11" />
+      <output wsam:Action="http://Servicios/EstadosYComentarios/S11Response" message="tns:S11Response" />
+    </operation>
+    <operation name="S12">
+      <input wsam:Action="http://Servicios/EstadosYComentarios/S12Request" message="tns:S12" />
+      <output wsam:Action="http://Servicios/EstadosYComentarios/S12Response" message="tns:S12Response" />
+    </operation>
+  </portType>
+  <binding name="EstadosYComentariosPortBinding" type="tns:EstadosYComentarios">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="S1">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S2">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S3">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S4">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S5">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S6">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S7">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="esUnNumero">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="leerEstadosYComentarios">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S9">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S10">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S8">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S11">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S12">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="EstadosYComentarios">
+    <port name="EstadosYComentariosPort" binding="tns:EstadosYComentariosPortBinding">
+      <soap:address location="http://localhost:8080/WarlockSoft/EstadosYComentarios" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://Servicios/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="UsuariosYAsociaciones" targetNamespace="http://Servicios/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WarlockSoft/UsuariosYAsociaciones?xsd=1" namespace="http://Servicios/" />
+    </xsd:schema>
+  </types>
+  <message name="S1">
+    <part name="parameters" element="tns:S1" />
+  </message>
+  <message name="S1Response">
+    <part name="parameters" element="tns:S1Response" />
+  </message>
+  <message name="S2">
+    <part name="parameters" element="tns:S2" />
+  </message>
+  <message name="S2Response">
+    <part name="parameters" element="tns:S2Response" />
+  </message>
+  <message name="S3">
+    <part name="parameters" element="tns:S3" />
+  </message>
+  <message name="S3Response">
+    <part name="parameters" element="tns:S3Response" />
+  </message>
+  <message name="S4">
+    <part name="parameters" element="tns:S4" />
+  </message>
+  <message name="S4Response">
+    <part name="parameters" element="tns:S4Response" />
+  </message>
+  <message name="S5">
+    <part name="parameters" element="tns:S5" />
+  </message>
+  <message name="S5Response">
+    <part name="parameters" element="tns:S5Response" />
+  </message>
+  <message name="S6">
+    <part name="parameters" element="tns:S6" />
+  </message>
+  <message name="S6Response">
+    <part name="parameters" element="tns:S6Response" />
+  </message>
+  <message name="S7">
+    <part name="parameters" element="tns:S7" />
+  </message>
+  <message name="S7Response">
+    <part name="parameters" element="tns:S7Response" />
+  </message>
+  <message name="leerUsuariosYAsociaciones">
+    <part name="parameters" element="tns:leerUsuariosYAsociaciones" />
+  </message>
+  <message name="leerUsuariosYAsociacionesResponse">
+    <part name="parameters" element="tns:leerUsuariosYAsociacionesResponse" />
+  </message>
+  <message name="S9">
+    <part name="parameters" element="tns:S9" />
+  </message>
+  <message name="S9Response">
+    <part name="parameters" element="tns:S9Response" />
+  </message>
+  <message name="S10">
+    <part name="parameters" element="tns:S10" />
+  </message>
+  <message name="S10Response">
+    <part name="parameters" element="tns:S10Response" />
+  </message>
+  <message name="S8">
+    <part name="parameters" element="tns:S8" />
+  </message>
+  <message name="S8Response">
+    <part name="parameters" element="tns:S8Response" />
+  </message>
+  <message name="S11">
+    <part name="parameters" element="tns:S11" />
+  </message>
+  <message name="S11Response">
+    <part name="parameters" element="tns:S11Response" />
+  </message>
+  <message name="asignarValorUsuario">
+    <part name="parameters" element="tns:asignarValorUsuario" />
+  </message>
+  <message name="asignarValorUsuarioResponse">
+    <part name="parameters" element="tns:asignarValorUsuarioResponse" />
+  </message>
+  <message name="asignarValorAsociacion">
+    <part name="parameters" element="tns:asignarValorAsociacion" />
+  </message>
+  <message name="asignarValorAsociacionResponse">
+    <part name="parameters" element="tns:asignarValorAsociacionResponse" />
+  </message>
+  <portType name="UsuariosYAsociaciones">
+    <operation name="S1">
+      <input wsam:Action="http://Servicios/UsuariosYAsociaciones/S1Request" message="tns:S1" />
+      <output wsam:Action="http://Servicios/UsuariosYAsociaciones/S1Response" message="tns:S1Response" />
+    </operation>
+    <operation name="S2">
+      <input wsam:Action="http://Servicios/UsuariosYAsociaciones/S2Request" message="tns:S2" />
+      <output wsam:Action="http://Servicios/UsuariosYAsociaciones/S2Response" message="tns:S2Response" />
+    </operation>
+    <operation name="S3">
+      <input wsam:Action="http://Servicios/UsuariosYAsociaciones/S3Request" message="tns:S3" />
+      <output wsam:Action="http://Servicios/UsuariosYAsociaciones/S3Response" message="tns:S3Response" />
+    </operation>
+    <operation name="S4">
+      <input wsam:Action="http://Servicios/UsuariosYAsociaciones/S4Request" message="tns:S4" />
+      <output wsam:Action="http://Servicios/UsuariosYAsociaciones/S4Response" message="tns:S4Response" />
+    </operation>
+    <operation name="S5">
+      <input wsam:Action="http://Servicios/UsuariosYAsociaciones/S5Request" message="tns:S5" />
+      <output wsam:Action="http://Servicios/UsuariosYAsociaciones/S5Response" message="tns:S5Response" />
+    </operation>
+    <operation name="S6">
+      <input wsam:Action="http://Servicios/UsuariosYAsociaciones/S6Request" message="tns:S6" />
+      <output wsam:Action="http://Servicios/UsuariosYAsociaciones/S6Response" message="tns:S6Response" />
+    </operation>
+    <operation name="S7">
+      <input wsam:Action="http://Servicios/UsuariosYAsociaciones/S7Request" message="tns:S7" />
+      <output wsam:Action="http://Servicios/UsuariosYAsociaciones/S7Response" message="tns:S7Response" />
+    </operation>
+    <operation name="leerUsuariosYAsociaciones">
+      <input wsam:Action="http://Servicios/UsuariosYAsociaciones/leerUsuariosYAsociacionesRequest" message="tns:leerUsuariosYAsociaciones" />
+      <output wsam:Action="http://Servicios/UsuariosYAsociaciones/leerUsuariosYAsociacionesResponse" message="tns:leerUsuariosYAsociacionesResponse" />
+    </operation>
+    <operation name="S9">
+      <input wsam:Action="http://Servicios/UsuariosYAsociaciones/S9Request" message="tns:S9" />
+      <output wsam:Action="http://Servicios/UsuariosYAsociaciones/S9Response" message="tns:S9Response" />
+    </operation>
+    <operation name="S10">
+      <input wsam:Action="http://Servicios/UsuariosYAsociaciones/S10Request" message="tns:S10" />
+      <output wsam:Action="http://Servicios/UsuariosYAsociaciones/S10Response" message="tns:S10Response" />
+    </operation>
+    <operation name="S8">
+      <input wsam:Action="http://Servicios/UsuariosYAsociaciones/S8Request" message="tns:S8" />
+      <output wsam:Action="http://Servicios/UsuariosYAsociaciones/S8Response" message="tns:S8Response" />
+    </operation>
+    <operation name="S11">
+      <input wsam:Action="http://Servicios/UsuariosYAsociaciones/S11Request" message="tns:S11" />
+      <output wsam:Action="http://Servicios/UsuariosYAsociaciones/S11Response" message="tns:S11Response" />
+    </operation>
+    <operation name="asignarValorUsuario">
+      <input wsam:Action="http://Servicios/UsuariosYAsociaciones/asignarValorUsuarioRequest" message="tns:asignarValorUsuario" />
+      <output wsam:Action="http://Servicios/UsuariosYAsociaciones/asignarValorUsuarioResponse" message="tns:asignarValorUsuarioResponse" />
+    </operation>
+    <operation name="asignarValorAsociacion">
+      <input wsam:Action="http://Servicios/UsuariosYAsociaciones/asignarValorAsociacionRequest" message="tns:asignarValorAsociacion" />
+      <output wsam:Action="http://Servicios/UsuariosYAsociaciones/asignarValorAsociacionResponse" message="tns:asignarValorAsociacionResponse" />
+    </operation>
+  </portType>
+  <binding name="UsuariosYAsociacionesPortBinding" type="tns:UsuariosYAsociaciones">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="S1">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S2">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S3">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S4">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S5">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S6">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S7">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="leerUsuariosYAsociaciones">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S9">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S10">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S8">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S11">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="asignarValorUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="asignarValorAsociacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="UsuariosYAsociaciones">
+    <port name="UsuariosYAsociacionesPort" binding="tns:UsuariosYAsociacionesPortBinding">
+      <soap:address location="http://localhost:8080/WarlockSoft/UsuariosYAsociaciones" />
+    </port>
+  </service>
+</definitions>

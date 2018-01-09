@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Servicios/" targetNamespace="http://Servicios/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="agregarPublicacion" type="tns:agregarPublicacion" />
+  <xs:element name="agregarPublicacionResponse" type="tns:agregarPublicacionResponse" />
+  <xs:element name="comentarPub" type="tns:comentarPub" />
+  <xs:element name="comentarPubResponse" type="tns:comentarPubResponse" />
+  <xs:element name="comentarPublicacion" type="tns:comentarPublicacion" />
+  <xs:element name="comentarPublicacionResponse" type="tns:comentarPublicacionResponse" />
+  <xs:element name="obtenerComentarios" type="tns:obtenerComentarios" />
+  <xs:element name="obtenerComentariosResponse" type="tns:obtenerComentariosResponse" />
+  <xs:element name="obtenerPublicacionesContactos" type="tns:obtenerPublicacionesContactos" />
+  <xs:element name="obtenerPublicacionesContactosResponse" type="tns:obtenerPublicacionesContactosResponse" />
+  <xs:element name="obtenerPublicacionesIndividuales" type="tns:obtenerPublicacionesIndividuales" />
+  <xs:element name="obtenerPublicacionesIndividualesResponse" type="tns:obtenerPublicacionesIndividualesResponse" />
+  <xs:complexType name="comentarPub">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nickname" type="xs:string" />
+      <xs:element name="id_publicacion" type="xs:int" />
+      <xs:element minOccurs="0" name="contenido" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="comentarPubResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerComentarios">
+    <xs:sequence>
+      <xs:element name="id_publicacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerComentariosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="comentarPublicacion">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+      <xs:element name="id_publicacion" type="xs:int" />
+      <xs:element minOccurs="0" name="contenido" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="comentarPublicacionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPublicacionesContactos">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPublicacionesContactosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarPublicacion">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+      <xs:element minOccurs="0" name="contenido" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarPublicacionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPublicacionesIndividuales">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPublicacionesIndividualesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

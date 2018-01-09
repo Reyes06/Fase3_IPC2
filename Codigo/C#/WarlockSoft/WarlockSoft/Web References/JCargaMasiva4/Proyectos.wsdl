@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://Servicios/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="Proyectos" targetNamespace="http://Servicios/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WarlockSoft/Proyectos?xsd=1" namespace="http://Servicios/" />
+    </xsd:schema>
+  </types>
+  <message name="S3">
+    <part name="parameters" element="tns:S3" />
+  </message>
+  <message name="S3Response">
+    <part name="parameters" element="tns:S3Response" />
+  </message>
+  <message name="S4">
+    <part name="parameters" element="tns:S4" />
+  </message>
+  <message name="S4Response">
+    <part name="parameters" element="tns:S4Response" />
+  </message>
+  <message name="S5">
+    <part name="parameters" element="tns:S5" />
+  </message>
+  <message name="S5Response">
+    <part name="parameters" element="tns:S5Response" />
+  </message>
+  <message name="S6">
+    <part name="parameters" element="tns:S6" />
+  </message>
+  <message name="S6Response">
+    <part name="parameters" element="tns:S6Response" />
+  </message>
+  <message name="S7">
+    <part name="parameters" element="tns:S7" />
+  </message>
+  <message name="S7Response">
+    <part name="parameters" element="tns:S7Response" />
+  </message>
+  <message name="leerProyectos">
+    <part name="parameters" element="tns:leerProyectos" />
+  </message>
+  <message name="leerProyectosResponse">
+    <part name="parameters" element="tns:leerProyectosResponse" />
+  </message>
+  <message name="asignarValor">
+    <part name="parameters" element="tns:asignarValor" />
+  </message>
+  <message name="asignarValorResponse">
+    <part name="parameters" element="tns:asignarValorResponse" />
+  </message>
+  <message name="S8">
+    <part name="parameters" element="tns:S8" />
+  </message>
+  <message name="S8Response">
+    <part name="parameters" element="tns:S8Response" />
+  </message>
+  <message name="S06">
+    <part name="parameters" element="tns:S06" />
+  </message>
+  <message name="S06Response">
+    <part name="parameters" element="tns:S06Response" />
+  </message>
+  <message name="S05">
+    <part name="parameters" element="tns:S05" />
+  </message>
+  <message name="S05Response">
+    <part name="parameters" element="tns:S05Response" />
+  </message>
+  <message name="S01">
+    <part name="parameters" element="tns:S01" />
+  </message>
+  <message name="S01Response">
+    <part name="parameters" element="tns:S01Response" />
+  </message>
+  <message name="S04">
+    <part name="parameters" element="tns:S04" />
+  </message>
+  <message name="S04Response">
+    <part name="parameters" element="tns:S04Response" />
+  </message>
+  <message name="S03">
+    <part name="parameters" element="tns:S03" />
+  </message>
+  <message name="S03Response">
+    <part name="parameters" element="tns:S03Response" />
+  </message>
+  <message name="esUnEntero">
+    <part name="parameters" element="tns:esUnEntero" />
+  </message>
+  <message name="esUnEnteroResponse">
+    <part name="parameters" element="tns:esUnEnteroResponse" />
+  </message>
+  <message name="S02">
+    <part name="parameters" element="tns:S02" />
+  </message>
+  <message name="S02Response">
+    <part name="parameters" element="tns:S02Response" />
+  </message>
+  <portType name="Proyectos">
+    <operation name="S3">
+      <input wsam:Action="http://Servicios/Proyectos/S3Request" message="tns:S3" />
+      <output wsam:Action="http://Servicios/Proyectos/S3Response" message="tns:S3Response" />
+    </operation>
+    <operation name="S4">
+      <input wsam:Action="http://Servicios/Proyectos/S4Request" message="tns:S4" />
+      <output wsam:Action="http://Servicios/Proyectos/S4Response" message="tns:S4Response" />
+    </operation>
+    <operation name="S5">
+      <input wsam:Action="http://Servicios/Proyectos/S5Request" message="tns:S5" />
+      <output wsam:Action="http://Servicios/Proyectos/S5Response" message="tns:S5Response" />
+    </operation>
+    <operation name="S6">
+      <input wsam:Action="http://Servicios/Proyectos/S6Request" message="tns:S6" />
+      <output wsam:Action="http://Servicios/Proyectos/S6Response" message="tns:S6Response" />
+    </operation>
+    <operation name="S7">
+      <input wsam:Action="http://Servicios/Proyectos/S7Request" message="tns:S7" />
+      <output wsam:Action="http://Servicios/Proyectos/S7Response" message="tns:S7Response" />
+    </operation>
+    <operation name="leerProyectos">
+      <input wsam:Action="http://Servicios/Proyectos/leerProyectosRequest" message="tns:leerProyectos" />
+      <output wsam:Action="http://Servicios/Proyectos/leerProyectosResponse" message="tns:leerProyectosResponse" />
+    </operation>
+    <operation name="asignarValor">
+      <input wsam:Action="http://Servicios/Proyectos/asignarValorRequest" message="tns:asignarValor" />
+      <output wsam:Action="http://Servicios/Proyectos/asignarValorResponse" message="tns:asignarValorResponse" />
+    </operation>
+    <operation name="S8">
+      <input wsam:Action="http://Servicios/Proyectos/S8Request" message="tns:S8" />
+      <output wsam:Action="http://Servicios/Proyectos/S8Response" message="tns:S8Response" />
+    </operation>
+    <operation name="S06">
+      <input wsam:Action="http://Servicios/Proyectos/S06Request" message="tns:S06" />
+      <output wsam:Action="http://Servicios/Proyectos/S06Response" message="tns:S06Response" />
+    </operation>
+    <operation name="S05">
+      <input wsam:Action="http://Servicios/Proyectos/S05Request" message="tns:S05" />
+      <output wsam:Action="http://Servicios/Proyectos/S05Response" message="tns:S05Response" />
+    </operation>
+    <operation name="S01">
+      <input wsam:Action="http://Servicios/Proyectos/S01Request" message="tns:S01" />
+      <output wsam:Action="http://Servicios/Proyectos/S01Response" message="tns:S01Response" />
+    </operation>
+    <operation name="S04">
+      <input wsam:Action="http://Servicios/Proyectos/S04Request" message="tns:S04" />
+      <output wsam:Action="http://Servicios/Proyectos/S04Response" message="tns:S04Response" />
+    </operation>
+    <operation name="S03">
+      <input wsam:Action="http://Servicios/Proyectos/S03Request" message="tns:S03" />
+      <output wsam:Action="http://Servicios/Proyectos/S03Response" message="tns:S03Response" />
+    </operation>
+    <operation name="esUnEntero">
+      <input wsam:Action="http://Servicios/Proyectos/esUnEnteroRequest" message="tns:esUnEntero" />
+      <output wsam:Action="http://Servicios/Proyectos/esUnEnteroResponse" message="tns:esUnEnteroResponse" />
+    </operation>
+    <operation name="S02">
+      <input wsam:Action="http://Servicios/Proyectos/S02Request" message="tns:S02" />
+      <output wsam:Action="http://Servicios/Proyectos/S02Response" message="tns:S02Response" />
+    </operation>
+  </portType>
+  <binding name="ProyectosPortBinding" type="tns:Proyectos">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="S3">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S4">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S5">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S6">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S7">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="leerProyectos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="asignarValor">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S8">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S06">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S05">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S01">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S04">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S03">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="esUnEntero">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="S02">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Proyectos">
+    <port name="ProyectosPort" binding="tns:ProyectosPortBinding">
+      <soap:address location="http://localhost:8080/WarlockSoft/Proyectos" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Servicios/" targetNamespace="http://Servicios/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="cambiarTipoMembresia" type="tns:cambiarTipoMembresia" />
+  <xs:element name="cambiarTipoMembresiaResponse" type="tns:cambiarTipoMembresiaResponse" />
+  <xs:element name="crearAsociacion" type="tns:crearAsociacion" />
+  <xs:element name="crearAsociacionResponse" type="tns:crearAsociacionResponse" />
+  <xs:element name="eliminarMiembro" type="tns:eliminarMiembro" />
+  <xs:element name="eliminarMiembroResponse" type="tns:eliminarMiembroResponse" />
+  <xs:element name="nuevoMiembro" type="tns:nuevoMiembro" />
+  <xs:element name="nuevoMiembroResponse" type="tns:nuevoMiembroResponse" />
+  <xs:element name="obtenerAsociacionesPorUsuario" type="tns:obtenerAsociacionesPorUsuario" />
+  <xs:element name="obtenerAsociacionesPorUsuarioResponse" type="tns:obtenerAsociacionesPorUsuarioResponse" />
+  <xs:element name="obtenerPublicacionesAsociacion" type="tns:obtenerPublicacionesAsociacion" />
+  <xs:element name="obtenerPublicacionesAsociacionResponse" type="tns:obtenerPublicacionesAsociacionResponse" />
+  <xs:element name="obtenerUsuariosPorAsociacion" type="tns:obtenerUsuariosPorAsociacion" />
+  <xs:element name="obtenerUsuariosPorAsociacionResponse" type="tns:obtenerUsuariosPorAsociacionResponse" />
+  <xs:complexType name="obtenerUsuariosPorAsociacion">
+    <xs:sequence>
+      <xs:element name="id_asociacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerUsuariosPorAsociacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPublicacionesAsociacion">
+    <xs:sequence>
+      <xs:element name="id_asociacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPublicacionesAsociacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="crearAsociacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="id_creador" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="crearAsociacionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarMiembro">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nickname" type="xs:string" />
+      <xs:element name="id_asociacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarMiembroResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cambiarTipoMembresia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nickname" type="xs:string" />
+      <xs:element name="id_asociacion" type="xs:int" />
+      <xs:element minOccurs="0" name="membresia" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cambiarTipoMembresiaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="nuevoMiembro">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nickname" type="xs:string" />
+      <xs:element name="id_asociacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="nuevoMiembroResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerAsociacionesPorUsuario">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+      <xs:element minOccurs="0" name="tipo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerAsociacionesPorUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

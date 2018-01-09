@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://Servicios/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="Usuario" targetNamespace="http://Servicios/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WarlockSoft/Usuario?xsd=1" namespace="http://Servicios/" />
+    </xsd:schema>
+  </types>
+  <message name="obtenerUsuario">
+    <part name="parameters" element="tns:obtenerUsuario" />
+  </message>
+  <message name="obtenerUsuarioResponse">
+    <part name="parameters" element="tns:obtenerUsuarioResponse" />
+  </message>
+  <message name="enviarMensaje">
+    <part name="parameters" element="tns:enviarMensaje" />
+  </message>
+  <message name="enviarMensajeResponse">
+    <part name="parameters" element="tns:enviarMensajeResponse" />
+  </message>
+  <message name="mensajesEnviados">
+    <part name="parameters" element="tns:mensajesEnviados" />
+  </message>
+  <message name="mensajesEnviadosResponse">
+    <part name="parameters" element="tns:mensajesEnviadosResponse" />
+  </message>
+  <message name="agregarContacto">
+    <part name="parameters" element="tns:agregarContacto" />
+  </message>
+  <message name="agregarContactoResponse">
+    <part name="parameters" element="tns:agregarContactoResponse" />
+  </message>
+  <message name="agregarUsuario">
+    <part name="parameters" element="tns:agregarUsuario" />
+  </message>
+  <message name="agregarUsuarioResponse">
+    <part name="parameters" element="tns:agregarUsuarioResponse" />
+  </message>
+  <message name="validarUsuario">
+    <part name="parameters" element="tns:validarUsuario" />
+  </message>
+  <message name="validarUsuarioResponse">
+    <part name="parameters" element="tns:validarUsuarioResponse" />
+  </message>
+  <message name="eliminarContacto">
+    <part name="parameters" element="tns:eliminarContacto" />
+  </message>
+  <message name="eliminarContactoResponse">
+    <part name="parameters" element="tns:eliminarContactoResponse" />
+  </message>
+  <message name="obtenerContactos">
+    <part name="parameters" element="tns:obtenerContactos" />
+  </message>
+  <message name="obtenerContactosResponse">
+    <part name="parameters" element="tns:obtenerContactosResponse" />
+  </message>
+  <message name="agregarConocimiento">
+    <part name="parameters" element="tns:agregarConocimiento" />
+  </message>
+  <message name="agregarConocimientoResponse">
+    <part name="parameters" element="tns:agregarConocimientoResponse" />
+  </message>
+  <message name="agregarKarmaExtra">
+    <part name="parameters" element="tns:agregarKarmaExtra" />
+  </message>
+  <message name="agregarKarmaExtraResponse">
+    <part name="parameters" element="tns:agregarKarmaExtraResponse" />
+  </message>
+  <message name="mensajesRecibidos">
+    <part name="parameters" element="tns:mensajesRecibidos" />
+  </message>
+  <message name="mensajesRecibidosResponse">
+    <part name="parameters" element="tns:mensajesRecibidosResponse" />
+  </message>
+  <message name="obtenerDatosUsuario">
+    <part name="parameters" element="tns:obtenerDatosUsuario" />
+  </message>
+  <message name="obtenerDatosUsuarioResponse">
+    <part name="parameters" element="tns:obtenerDatosUsuarioResponse" />
+  </message>
+  <portType name="Usuario">
+    <operation name="obtenerUsuario">
+      <input wsam:Action="http://Servicios/Usuario/obtenerUsuarioRequest" message="tns:obtenerUsuario" />
+      <output wsam:Action="http://Servicios/Usuario/obtenerUsuarioResponse" message="tns:obtenerUsuarioResponse" />
+    </operation>
+    <operation name="enviarMensaje">
+      <input wsam:Action="http://Servicios/Usuario/enviarMensajeRequest" message="tns:enviarMensaje" />
+      <output wsam:Action="http://Servicios/Usuario/enviarMensajeResponse" message="tns:enviarMensajeResponse" />
+    </operation>
+    <operation name="mensajesEnviados">
+      <input wsam:Action="http://Servicios/Usuario/mensajesEnviadosRequest" message="tns:mensajesEnviados" />
+      <output wsam:Action="http://Servicios/Usuario/mensajesEnviadosResponse" message="tns:mensajesEnviadosResponse" />
+    </operation>
+    <operation name="agregarContacto">
+      <input wsam:Action="http://Servicios/Usuario/agregarContactoRequest" message="tns:agregarContacto" />
+      <output wsam:Action="http://Servicios/Usuario/agregarContactoResponse" message="tns:agregarContactoResponse" />
+    </operation>
+    <operation name="agregarUsuario">
+      <input wsam:Action="http://Servicios/Usuario/agregarUsuarioRequest" message="tns:agregarUsuario" />
+      <output wsam:Action="http://Servicios/Usuario/agregarUsuarioResponse" message="tns:agregarUsuarioResponse" />
+    </operation>
+    <operation name="validarUsuario">
+      <input wsam:Action="http://Servicios/Usuario/validarUsuarioRequest" message="tns:validarUsuario" />
+      <output wsam:Action="http://Servicios/Usuario/validarUsuarioResponse" message="tns:validarUsuarioResponse" />
+    </operation>
+    <operation name="eliminarContacto">
+      <input wsam:Action="http://Servicios/Usuario/eliminarContactoRequest" message="tns:eliminarContacto" />
+      <output wsam:Action="http://Servicios/Usuario/eliminarContactoResponse" message="tns:eliminarContactoResponse" />
+    </operation>
+    <operation name="obtenerContactos">
+      <input wsam:Action="http://Servicios/Usuario/obtenerContactosRequest" message="tns:obtenerContactos" />
+      <output wsam:Action="http://Servicios/Usuario/obtenerContactosResponse" message="tns:obtenerContactosResponse" />
+    </operation>
+    <operation name="agregarConocimiento">
+      <input wsam:Action="http://Servicios/Usuario/agregarConocimientoRequest" message="tns:agregarConocimiento" />
+      <output wsam:Action="http://Servicios/Usuario/agregarConocimientoResponse" message="tns:agregarConocimientoResponse" />
+    </operation>
+    <operation name="agregarKarmaExtra">
+      <input wsam:Action="http://Servicios/Usuario/agregarKarmaExtraRequest" message="tns:agregarKarmaExtra" />
+      <output wsam:Action="http://Servicios/Usuario/agregarKarmaExtraResponse" message="tns:agregarKarmaExtraResponse" />
+    </operation>
+    <operation name="mensajesRecibidos">
+      <input wsam:Action="http://Servicios/Usuario/mensajesRecibidosRequest" message="tns:mensajesRecibidos" />
+      <output wsam:Action="http://Servicios/Usuario/mensajesRecibidosResponse" message="tns:mensajesRecibidosResponse" />
+    </operation>
+    <operation name="obtenerDatosUsuario">
+      <input wsam:Action="http://Servicios/Usuario/obtenerDatosUsuarioRequest" message="tns:obtenerDatosUsuario" />
+      <output wsam:Action="http://Servicios/Usuario/obtenerDatosUsuarioResponse" message="tns:obtenerDatosUsuarioResponse" />
+    </operation>
+  </portType>
+  <binding name="UsuarioPortBinding" type="tns:Usuario">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="obtenerUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="enviarMensaje">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="mensajesEnviados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="agregarContacto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="agregarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="validarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarContacto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerContactos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="agregarConocimiento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="agregarKarmaExtra">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="mensajesRecibidos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerDatosUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Usuario">
+    <port name="UsuarioPort" binding="tns:UsuarioPortBinding">
+      <soap:address location="http://localhost:8080/WarlockSoft/Usuario" />
+    </port>
+  </service>
+</definitions>

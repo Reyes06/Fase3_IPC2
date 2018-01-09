@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Servicios/" targetNamespace="http://Servicios/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="S1" type="tns:S1" />
+  <xs:element name="S10" type="tns:S10" />
+  <xs:element name="S10Response" type="tns:S10Response" />
+  <xs:element name="S11" type="tns:S11" />
+  <xs:element name="S11Response" type="tns:S11Response" />
+  <xs:element name="S12" type="tns:S12" />
+  <xs:element name="S12Response" type="tns:S12Response" />
+  <xs:element name="S1Response" type="tns:S1Response" />
+  <xs:element name="S2" type="tns:S2" />
+  <xs:element name="S2Response" type="tns:S2Response" />
+  <xs:element name="S3" type="tns:S3" />
+  <xs:element name="S3Response" type="tns:S3Response" />
+  <xs:element name="S4" type="tns:S4" />
+  <xs:element name="S4Response" type="tns:S4Response" />
+  <xs:element name="S5" type="tns:S5" />
+  <xs:element name="S5Response" type="tns:S5Response" />
+  <xs:element name="S6" type="tns:S6" />
+  <xs:element name="S6Response" type="tns:S6Response" />
+  <xs:element name="S7" type="tns:S7" />
+  <xs:element name="S7Response" type="tns:S7Response" />
+  <xs:element name="S8" type="tns:S8" />
+  <xs:element name="S8Response" type="tns:S8Response" />
+  <xs:element name="S9" type="tns:S9" />
+  <xs:element name="S9Response" type="tns:S9Response" />
+  <xs:element name="esUnNumero" type="tns:esUnNumero" />
+  <xs:element name="esUnNumeroResponse" type="tns:esUnNumeroResponse" />
+  <xs:element name="leerEstadosYComentarios" nillable="true" type="tns:leerUsuariosYAsociaciones" />
+  <xs:element name="leerEstadosYComentariosResponse" nillable="true" type="tns:leerUsuariosYAsociacionesResponse" />
+  <xs:element name="leerUsuariosYAsociaciones" type="tns:leerUsuariosYAsociaciones" />
+  <xs:element name="leerUsuariosYAsociacionesResponse" type="tns:leerUsuariosYAsociacionesResponse" />
+  <xs:complexType name="S6">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S6Response">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S5">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="S5Response">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S4">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S4Response">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S3">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S3Response">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S9">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S9Response">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="esUnNumero">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="esUnNumeroResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="S8">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="S8Response">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S7">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S7Response">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S10">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S10Response">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S11">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S11Response">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S12">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="S12Response">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="leerUsuariosYAsociaciones">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ruta" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="leerUsuariosYAsociacionesResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S2">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S2Response">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S1">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="S1Response">
+    <xs:sequence />
+  </xs:complexType>
+</xs:schema>
